@@ -140,11 +140,60 @@
 для интерполянта с максимальным числом ячеек по широте, долготе и времени варьировалось
 количество ячеек по высоте и определялась точность, достижимая с такими параметрами.
 
-На рисунках !!! представлены зависимости относительной ошибки от количества ячеек по
+На рисунках \ref{fig:atmo:2357} -- \ref{fig:atmo:2753} представлены зависимости относительной ошибки от количества ячеек по
 конкретной координате интерполянта. Для времени фиксировалось
 максимальное количество ячеек по остальным координатам. Для долготы и широты
 фиксировалось наиболее плотное разбиение по широте и долготе соответственно, а диапазон
 соответствует вариации количества ячеек по времени.
+
+% \begin{figure}[htbp]
+%     \centering
+    
+%     % Первая строка
+%     \begin{subfigure}[b]{0.48\textwidth}
+%         \includegraphics[width=\linewidth]{../images/solution/atmo/2357.png}
+%         \caption{Зависимость ошибки от количества ячеек интерполянта для конфигурации (2, 3, 5, 7)}
+%         \label{fig:atmo:2357}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.48\textwidth}
+%         \includegraphics[width=\linewidth]{../images/solution/atmo/2375.png}
+%         \caption{Зависимость ошибки от количества ячеек интерполянта для конфигурации (2, 3, 7, 5)}
+%         \label{fig:atmo:2375}
+%     \end{subfigure}
+    
+%     \vspace{0.5cm} % Вертикальный отступ между строками
+    
+%     % Вторая строка
+%     \begin{subfigure}[b]{0.48\textwidth}
+%         \includegraphics[width=\linewidth]{../images/solution/atmo/2537.png}
+%         \caption{Зависимость ошибки от количества ячеек интерполянта для конфигурации (2, 5, 3, 7)}
+%         \label{fig:atmo:2537}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.48\textwidth}
+%         \includegraphics[width=\linewidth]{../images/solution/atmo/2573.png}
+%         \caption{Зависимость ошибки от количества ячеек интерполянта для конфигурации (2, 5, 7, 3)}
+%         \label{fig:atmo:2573}
+%     \end{subfigure}
+    
+%     \vspace{0.5cm} % Вертикальный отступ между строками
+    
+%     % Третья строка
+%     \begin{subfigure}[b]{0.48\textwidth}
+%         \includegraphics[width=\linewidth]{../images/solution/atmo/2735.png}
+%         \caption{Зависимость ошибки от количества ячеек интерполянта для конфигурации (2, 7, 3, 5)}
+%         \label{fig:atmo:2735}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.48\textwidth}
+%         \includegraphics[width=\linewidth]{../images/solution/atmo/2753.png}
+%         \caption{Зависимость ошибки от количества ячеек интерполянта для конфигурации (2, 7, 5, 3)}
+%         \label{fig:atmo:2753}
+%     \end{subfigure}
+    
+%     \label{fig:all_images}
+% \end{figure}
 
 \begin{figure}[h!]
     \centering
@@ -189,10 +238,54 @@
  \end{figure}
 
  Из графиков видно, что максимальная точность интерполянтов в тестах составила $4 \cdot 10^{-4}$.
- На срезах видно количество ячеек по каждой коордианате, которого достаточно для достижения
+ По срезам можно определить количество ячеек по каждой координате, которого достаточно для достижения
  предельной точности. Чем больше степень во времени, тем уже диапазон по широте и долготе. Это объясняется тем,
  что для достижения максимальной точности при заданном количестве ячеек по расстоянию
- требуется меньше ячеек по времени.
+ требуется меньше ячеек по времени. На рисунках \ref{fig:atmo:2357_heatmap} -- \ref{fig:atmo:2753_heatmap} изображены карты
+ ошибок для разных конфигураций. Градиент на них направлен вдоль оси, соответствующей
+ координате с наименьшей степенью в ячейке.
+
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\linewidth]{../images/solution/atmo/2357_heatmap.png}
+    \captionof{figure}{Карта ошибок для конфигурации (2, 3, 5, 7)}
+    \label{fig:atmo:2357_heatmap}
+ \end{figure}
+
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\linewidth]{../images/solution/atmo/2375_heatmap.png}
+    \captionof{figure}{Карта ошибок для конфигурации (2, 3, 7, 5)}
+    \label{fig:atmo:2375_heatmap}
+ \end{figure}
+
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\linewidth]{../images/solution/atmo/2537_heatmap.png}
+    \captionof{figure}{Карта ошибок для конфигурации (2, 5, 3, 7)}
+    \label{fig:atmo:2537_heatmap}
+ \end{figure}
+
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\linewidth]{../images/solution/atmo/2573_heatmap.png}
+    \captionof{figure}{Карта ошибок для конфигурации (2, 5, 7, 3)}
+    \label{fig:atmo:2573_heatmap}
+ \end{figure}
+
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\linewidth]{../images/solution/atmo/2735_heatmap.png}
+    \captionof{figure}{Карта ошибок для конфигурации (2, 7, 3, 5)}
+    \label{fig:atmo:2735_heatmap}
+ \end{figure}
+
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\linewidth]{../images/solution/atmo/2753_heatmap.png}
+    \captionof{figure}{Карта ошибок для конфигурации (2, 7, 5, 3)}
+    \label{fig:atmo:2753_heatmap}
+ \end{figure}
 
  \begin{figure}[h!]
     \centering
@@ -200,5 +293,31 @@
     \captionof{figure}{Зависимость ошибки от количества ячеек интерполянта по радиусу для конфигурации (2, 3, 5, 7)}
     \label{fig:atmo:2357_rho}
  \end{figure}
+
+ На картах \ref{fig:atmo:2753_latlon} и \ref{fig:atmo:2753_latlon_abs_err} приведено
+ распределение плотности и абсолютной ошибки соответственно для интерполянта на высоте 350 километров.
+ Использовалась конфигурация (2, 7, 5, 3) с количеством ячеек (65, 50, 50, 50). Темные участки, относящиеся к областям с
+ повышенной плотностью, совпадают с участками, на которых интерполяция дает наибольшую абсолютную ошибку.
+ В то же время относительная ошибка меняется по области не существенно.
+ Темные полосы на рисунке \ref{fig:atmo:2753_latlon_abs_err} возникают на границе ячеек
+ по широте и долготе.
+
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{../images/solution/atmo/2753_latlon_direct_val_heatmap.png}
+    \captionof{figure}{Распределение плотности $\rho(\phi, \lambda)$ для конфигурации (2, 7, 5, 3)}
+    \label{fig:atmo:2753_latlon}
+ \end{figure}
+
+ \begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{../images/solution/atmo/2753_latlon_abs_error_heatmap.png}
+    \captionof{figure}{Распределение абсолютной ошибки вычисления плотности для конфигурации (2, 7, 5, 3)}
+    \label{fig:atmo:2753_latlon_abs_err}
+ \end{figure}
+
+ На основе данных о поточечном строении для каждой конфигурации были подобраны интерполянты, 
+ ползволяющие достичь малой ошибки при минимальном размере. 
+ Характеристики выбранных интерполянтов представлены в таблице !!!.
 
 \clearpage
