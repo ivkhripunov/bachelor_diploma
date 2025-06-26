@@ -61,8 +61,9 @@ $\mathbf{z}^O = (z_1^O, \dots, z_N^O)$, $W = diag(W_1, \dots, W_N)$.
 
 Обозначая $\mathbf{z}^O - \mathbf{z}^N = \mathbf{b}$, получим выражение для шага:
 \begin{equation}
-    \Delta \mathbf{x} = (A^T W A)^{-1} A^T W \mathbf{b}
+    \Delta \mathbf{x} = (A^T W A)^{-1} A^T W \mathbf{b} = P A^T W \mathbf{b},
 \end{equation}
+где $P$ -- матрица ковариации.
 
 Таким образом, имея начальное приближение $\mathbf{x}_{0}$, можно построить итеративную процедуру:
 \begin{equation}
