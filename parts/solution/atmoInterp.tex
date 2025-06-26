@@ -308,6 +308,7 @@
  уровень ресурсоемкости вычисления гравитационного потенциала с интерполяцией.
 
  \begin{table}[h!]
+    \caption{Результаты тестирования выбранных интерполянтов}
     \centering
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|c|c|c|c|c|}
@@ -320,7 +321,6 @@
     (2, 5, 7, 3) & (65, 25, 20, 50) & 0.042                                                               & 12.6                                                                       & 0.97       \\ \hline
     (2, 7, 3, 5) & (65, 15, 45, 40) & 0.044                                                            & 12.2                                                                       & 1.05       \\ \hline
     \end{tabular}
-    \caption{Результаты тестирования выбранных интерполянтов}
     \label{tab:atmo_propag}   
 \end{table}
 
@@ -398,6 +398,7 @@
 результатов.
 
 \begin{table}[h!]
+    \caption{Сводная таблица скорости прогноза}
     \centering
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|cc|cc|}
@@ -407,7 +408,6 @@
     \multicolumn{1}{|c|}{\multirow{2}{*}{Атмосфера}}   & Без интерполяции  & \multicolumn{1}{c|}{1}                & 2.8             \\ \cline{2-4} 
     \multicolumn{1}{|c|}{}                             & С интерполяцией   & \multicolumn{1}{c|}{1.2}              & 5.7             \\ \hline
     \end{tabular}
-    \caption{Сводная таблица скорости прогноза}
     \label{tab:atmo_propag_acc}
 \end{table}
 \clearpage

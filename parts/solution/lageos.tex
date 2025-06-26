@@ -135,6 +135,7 @@ $\mathbf{\textbf{Э}}_0$:
 \begin{table}[h!]
     \centering
     \begin{minipage}[t]{0.48\textwidth}
+    \caption{Параметры аппарата LAGEOS-2}
     \centering
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|l|l|}
@@ -144,11 +145,11 @@ $\mathbf{\textbf{Э}}_0$:
     Диаметр     & 60 см      \\ \hline
     Вес         & 405.38 кг  \\ \hline
     \end{tabular}
-    \caption{Параметры аппарата LAGEOS-2}
     \label{tab:lageos2}
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.48\textwidth}
+    \caption{Параметры орбиты LAGEOS-2}
     \centering
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|l|l|}
@@ -159,7 +160,6 @@ $\mathbf{\textbf{Э}}_0$:
     Эксцентриситет & 0.0135    \\ \hline
     Период         & 223 мин.  \\ \hline
     \end{tabular}
-    \caption{Параметры орбиты LAGEOS-2}
     \label{tab:lageos2_orb}
     \end{minipage}
 \end{table}
@@ -171,6 +171,7 @@ $\mathbf{\textbf{Э}}_0$:
 рассмотренные выше псевдоускорения и псевдоимпульсы. 
 
 \begin{table}[h!]
+    \caption{Параметры модели движения LAGEOS-2}
     \centering
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|ll|}
@@ -183,7 +184,6 @@ $\mathbf{\textbf{Э}}_0$:
     \multicolumn{1}{|l|}{Эмпирика}               & \begin{tabular}[l]{@{}l@{}}7 псевдоускорений,\\ 7 псевдоимпульсов.\\ Равномерно распределены \\ на мерном интервале\end{tabular}        \\ \hline
     \multicolumn{1}{|l|}{Релятивистские эффекты}         & по IERS                                                                                                                         \\ \hline
     \end{tabular}
-    \caption{Параметры модели движения LAGEOS-2}
     \label{tab:lageos2_forces}
 \end{table}
 
@@ -193,6 +193,7 @@ $\mathbf{\textbf{Э}}_0$:
 Параметры уточнения орбиты отражены в таблице \ref{tab:lageos2_opt}.
 
 \begin{table}[h!]
+    \caption{Параметры уточнения орбиты}
     \centering
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|ll|}
@@ -204,7 +205,6 @@ $\mathbf{\textbf{Э}}_0$:
     \multicolumn{1}{|l|}{Целевая функция} & Сумма квадратов невязок                                                                 \\ \hline
     \multicolumn{1}{|l|}{Мерный интервал} & 7 суток (30.05.2021 -- 06.06.2021)                                                                                 \\ \hline
     \end{tabular}
-    \caption{Параметры уточнения орбиты}
     \label{tab:lageos2_opt}
 \end{table}
 
@@ -213,6 +213,8 @@ $\mathbf{\textbf{Э}}_0$:
 факторов. Результаты экспериментов представлены в таблице \ref{tab:lageos2_exp}. 
 
 \begin{table}[h!]
+    \caption{Зависимость точности восстановления орбиты от учета различных наборов
+    возмущающих факторов}
     \centering
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|l|lll|}
@@ -228,8 +230,6 @@ $\mathbf{\textbf{Э}}_0$:
     + 7 псевдоускорений                              & \multicolumn{1}{l|}{0.29}         & \multicolumn{1}{l|}{0.10}    & 0.11                                        \\ \hline
     + 7 псевдоимпульсов                              & \multicolumn{1}{l|}{0.11}         & \multicolumn{1}{l|}{0.05}    & 0.06                                        \\ \hline
     \end{tabular}
-    \caption{Зависимость точности восстановления орбиты от учета различных наборов
-    возмущающих факторов}
     \label{tab:lageos2_exp}
 \end{table}
 
